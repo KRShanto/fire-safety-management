@@ -2,16 +2,10 @@ import { Alumni_Sans, Montserrat } from "next/font/google";
 import Image from "next/image";
 import React from "react";
 
-const alumniSans = Alumni_Sans({ subsets: ["latin"], weight: "700" });
-const montserrat = Montserrat({ subsets: ["latin"], weight: "700" });
-
 export default function Partners() {
   return (
     <div className="relative flex items-center justify-center bg-[#F9F6EE] p-20 pb-40">
-      <h2
-        className="stroke absolute left-10 top-[60%] z-10 origin-left -translate-y-1/2 rotate-[270deg] transform text-7xl font-bold uppercase"
-        style={alumniSans.style}
-      >
+      <h2 className="stroke font-alumni absolute left-10 top-[60%] z-10 origin-left -translate-y-1/2 rotate-[270deg] transform text-7xl font-bold uppercase">
         Partners
       </h2>
 
@@ -24,9 +18,9 @@ export default function Partners() {
       />
 
       <div className="z-20">
-        <h2 className="text-3xl" style={montserrat.style}>
+        <h2 className="font-montserrat text-3xl font-bold">
           Our Proud <br />
-          <span className="text-[#ED1C24]">Internal Manufacturers</span>
+          <span className="text-primary">Internal Manufacturers</span>
         </h2>
 
         <p className="mt-5 w-[35rem]">
@@ -38,7 +32,7 @@ export default function Partners() {
           reliability and cutting-edge solutions.{" "}
         </p>
 
-        <button className="mt-5 rounded-md bg-[#ED1C24] px-10 py-3 text-sm font-semibold text-white">
+        <button className="bg-primary mt-5 rounded-md px-10 py-3 text-sm font-semibold text-white">
           View Details
         </button>
       </div>

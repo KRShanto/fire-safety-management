@@ -1,8 +1,6 @@
 import { cn } from "@/lib/cn";
 import { Poppins } from "next/font/google";
 
-const poppins = Poppins({ subsets: ["latin"], weight: "700" });
-
 const experience = [
   {
     number: 24,
@@ -36,10 +34,10 @@ export default function Experience() {
           key={item.title}
           className={cn(
             "flex flex-col items-center",
-            i % 2 === 0 ? "text-[#ED1C24]" : "text-[#2D59A9]",
+            i % 2 === 0 ? "text-primary" : "text-[#2D59A9]",
           )}
         >
-          <h3 className="text-[48px] font-bold" style={poppins.style}>
+          <h3 className="font-montserrat text-[48px] font-bold">
             {item.number}
           </h3>
           <p className="-mt-4 text-lg">{item.title}</p>

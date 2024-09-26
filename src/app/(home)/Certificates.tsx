@@ -4,9 +4,6 @@ import Image from "next/image";
 import React, { useState } from "react";
 import { FaArrowCircleRight } from "react-icons/fa";
 
-const alumniSans = Alumni_Sans({ subsets: ["latin"], weight: "700" });
-const montserrat = Montserrat({ subsets: ["latin"], weight: "700" });
-
 const certificates = [
   {
     src: "/Certificate1.png",
@@ -33,10 +30,7 @@ export default function Certificates() {
 
   return (
     <div className="relative flex justify-center bg-[#F9F6EE] p-20 pb-40">
-      <h2
-        className="stroke absolute right-10 top-[60%] z-10 origin-right -translate-y-1/2 rotate-[90deg] transform text-7xl font-bold uppercase"
-        style={alumniSans.style}
-      >
+      <h2 className="stroke font-alumni absolute right-10 top-[60%] z-10 origin-right -translate-y-1/2 rotate-[90deg] transform text-7xl font-bold uppercase">
         Certificate
       </h2>
 
@@ -50,12 +44,12 @@ export default function Certificates() {
           />
 
           <div>
-            <h2 style={montserrat.style} className="mb-4 text-4xl">
+            <h2 className="font-montserrat mb-4 text-4xl font-bold">
               {certificates[current].title.split("##").map((text, i) =>
                 i % 2 === 0 ? (
                   text
                 ) : (
-                  <span key={i} className="text-[#ED1C24]">
+                  <span key={i} className="text-primary">
                     {text}
                   </span>
                 ),
@@ -63,7 +57,7 @@ export default function Certificates() {
             </h2>
             <p>{certificates[current].description}</p>
 
-            <button className="mt-10 rounded-md bg-[#ED1C24] px-10 py-3 text-sm font-bold text-white">
+            <button className="bg-primary mt-10 rounded-md px-10 py-3 text-sm font-bold text-white">
               Learn More
             </button>
           </div>

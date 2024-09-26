@@ -13,9 +13,6 @@ import {
   FaYoutube,
 } from "react-icons/fa";
 
-const alumniSans = Alumni_Sans({ subsets: ["latin"], weight: "700" });
-const montserrat = Montserrat({ subsets: ["latin"], weight: "700" });
-
 const insights = [
   { src: "/Insight1.png", title: "Product", icon: <BsBoxSeam /> },
   { src: "/Insight2.png", title: "News", icon: <LuNewspaper /> },
@@ -38,7 +35,7 @@ export default function Footer() {
           backgroundRepeat: "no-repeat",
         }}
       >
-        <h2 className="text-4xl text-white" style={montserrat.style}>
+        <h2 className="font-montserrat text-4xl font-bold text-white">
           Careers at FSM
         </h2>
 
@@ -49,7 +46,7 @@ export default function Footer() {
           labore iste. Optio voluptatem provident
         </p>
 
-        <button className="mt-5 rounded-lg bg-[#ED1C24] px-10 py-3 font-semibold text-white">
+        <button className="bg-primary mt-5 rounded-lg px-10 py-3 font-semibold text-white">
           Start Your Career Here
         </button>
 
@@ -59,9 +56,9 @@ export default function Footer() {
       </div>
 
       {/* Insights */}
-      <div className="flex flex-col items-center p-20" style={montserrat.style}>
+      <div className="font-montserrat flex flex-col items-center p-20 font-bold">
         <h2 className="text-4xl uppercase">
-          <span className="text-[#ED1C24]">F</span>
+          <span className="text-primary">F</span>
           <span className="text-[#2D59A9]">S</span>
           <span className="text-[#202A5E]">M</span> <span>Insights</span>
         </h2>
@@ -70,7 +67,7 @@ export default function Footer() {
           {insights.map((insight, i) => (
             <div
               key={i}
-              className="flex cursor-pointer flex-col items-center justify-center gap-5 text-white transition-all duration-300 hover:text-[#ED1C24]"
+              className="hover:text-primary flex cursor-pointer flex-col items-center justify-center gap-5 text-white transition-all duration-300"
               style={{
                 width: "600px",
                 height: "250px",
@@ -100,7 +97,7 @@ export default function Footer() {
       >
         <div className="flex justify-center gap-5">
           {Array.from({ length: 4 }).map((_, i) => (
-            <div key={i} className="h-16 w-16 rounded-full bg-[#ED1C24] p-3">
+            <div key={i} className="bg-primary h-16 w-16 rounded-full p-3">
               <Image
                 alt="Footer icon"
                 src={`/Footer-icon-${i + 1}.svg`}

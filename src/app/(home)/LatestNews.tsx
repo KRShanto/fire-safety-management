@@ -2,9 +2,6 @@ import moment from "moment";
 import { Alumni_Sans, Montserrat } from "next/font/google";
 import { FaQuoteLeft, FaStar, FaStarHalf } from "react-icons/fa";
 
-const alumniSans = Alumni_Sans({ subsets: ["latin"], weight: "700" });
-const montserrat = Montserrat({ subsets: ["latin"], weight: "700" });
-
 const news = [
   {
     title:
@@ -27,18 +24,12 @@ const news = [
 export default function LatestNews() {
   return (
     <div className="relative flex items-center justify-center gap-20 bg-[#F9F6EE] p-20 pb-40">
-      <h2
-        className="stroke absolute left-10 top-[60%] z-10 origin-left -translate-y-1/2 rotate-[270deg] transform text-7xl font-bold uppercase"
-        style={alumniSans.style}
-      >
+      <h2 className="stroke font-alumni absolute left-10 top-[60%] z-10 origin-left -translate-y-1/2 rotate-[270deg] transform text-7xl font-bold uppercase">
         Latest news
       </h2>
 
       <div className="w-[30rem]">
-        <h2
-          className="w-[20rem] text-4xl uppercase text-[#ED1C24]"
-          style={montserrat.style}
-        >
+        <h2 className="font-montserrat text-primary w-[20rem] text-4xl font-bold uppercase">
           Latest in fire safety news
         </h2>
         <p className="mt-5">
@@ -47,7 +38,7 @@ export default function LatestNews() {
           most current industry insights.
         </p>
 
-        <button className="mt-5 rounded-lg bg-[#ED1C24] px-10 py-2 text-white">
+        <button className="bg-primary mt-5 rounded-lg px-10 py-2 text-white">
           More News
         </button>
       </div>
@@ -62,7 +53,7 @@ export default function LatestNews() {
             }}
           >
             <div className="relative h-[250px] bg-[#DEDCDC]">
-              <div className="absolute -bottom-5 right-5 flex flex-col items-center bg-[#ED1C24] px-2 py-1 text-white">
+              <div className="bg-primary absolute -bottom-5 right-5 flex flex-col items-center px-2 py-1 text-white">
                 {/* format: 16 Jan */}
                 <p>{moment(news.date).format("DD")}</p>
                 <p>{moment(news.date).format("MMM")}</p>
@@ -70,7 +61,7 @@ export default function LatestNews() {
             </div>
             <h3 className="text-xl font-bold">{news.title}</h3>
             <p>{news.desciption}</p>
-            <a href={news.link} className="text-[#ED1C24]">
+            <a href={news.link} className="text-primary">
               Read more
             </a>
           </div>

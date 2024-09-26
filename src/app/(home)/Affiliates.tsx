@@ -2,13 +2,11 @@ import React from "react";
 import { Montserrat } from "next/font/google";
 import Image from "next/image";
 
-const montserrat = Montserrat({ weight: "700", subsets: ["latin"] });
-
 export default function Affiliates() {
   return (
     <div className="flex items-center justify-center gap-10 bg-white p-5">
-      <h2 className="text-4xl" style={montserrat.style}>
-        Our <span className="text-[#ED1C24]">Affiliations</span>
+      <h2 className="font-montserrat text-4xl">
+        Our <span className="text-primary">Affiliations</span>
       </h2>
 
       <div

@@ -2,9 +2,6 @@ import { Alumni_Sans, Montserrat } from "next/font/google";
 import Image from "next/image";
 import React from "react";
 
-const montserrat = Montserrat({ weight: "700", subsets: ["latin"] });
-const alumniSans = Alumni_Sans({ subsets: ["latin"], weight: "700" });
-
 const services = [
   {
     src: "/Service1.png",
@@ -27,15 +24,12 @@ const services = [
 export default function Service() {
   return (
     <div className="relative flex flex-col items-center bg-[#F9F6EE] p-20">
-      <h2
-        className="stroke absolute left-10 top-[60%] z-10 origin-left -translate-y-1/2 rotate-[270deg] transform text-7xl font-bold uppercase"
-        style={alumniSans.style}
-      >
+      <h2 className="stroke absolute left-10 top-[60%] z-10 origin-left -translate-y-1/2 rotate-[270deg] transform text-7xl font-bold uppercase">
         Service
       </h2>
 
-      <h2 className="mb-4 text-4xl uppercase" style={montserrat.style}>
-        What <span className="text-[#ED1C24]">professional training</span> we
+      <h2 className="font-montserrat mb-4 text-4xl font-bold uppercase">
+        What <span className="text-primary">professional training</span> we
         offer
       </h2>
 
@@ -57,17 +51,14 @@ export default function Service() {
               height={300}
               alt={service.title}
             />
-            <h3
-              style={montserrat.style}
-              className="absolute left-[50%] top-[50%] w-full -translate-x-1/2 text-center text-xl font-bold text-white"
-            >
+            <h3 className="font-montserrat absolute left-[50%] top-[50%] w-full -translate-x-1/2 text-center text-xl font-bold text-white">
               {service.title}
             </h3>
           </div>
         ))}
       </div>
 
-      <button className="mt-10 rounded-md bg-[#ED1C24] px-10 py-3 font-bold text-white">
+      <button className="bg-primary mt-10 rounded-md px-10 py-3 font-bold text-white">
         Learn More
       </button>
     </div>

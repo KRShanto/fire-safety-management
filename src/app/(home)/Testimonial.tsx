@@ -2,9 +2,6 @@ import { cn } from "@/lib/cn";
 import { Alumni_Sans, Montserrat } from "next/font/google";
 import { FaQuoteLeft, FaStar, FaStarHalf } from "react-icons/fa";
 
-const alumniSans = Alumni_Sans({ subsets: ["latin"], weight: "700" });
-const montserrat = Montserrat({ subsets: ["latin"], weight: "700" });
-
 const testimonials = [
   {
     name: "Fahim Ahmed",
@@ -29,15 +26,12 @@ const testimonials = [
 export default function Testimonial() {
   return (
     <div className="relative flex flex-col items-center bg-[#F9F6EE] p-20 pb-40">
-      <h2
-        className="stroke absolute right-10 top-[60%] z-10 origin-right -translate-y-1/2 rotate-[90deg] transform text-7xl font-bold uppercase"
-        style={alumniSans.style}
-      >
+      <h2 className="stroke absolute right-10 top-[60%] z-10 origin-right -translate-y-1/2 rotate-[90deg] transform text-7xl font-bold uppercase">
         Testimonial
       </h2>
 
-      <h2 className="text-4xl" style={montserrat.style}>
-        FSM <span className="text-[#ED1C24]">Clients Thoughts</span>
+      <h2 className="font-montserrat text-4xl font-bold">
+        FSM <span className="text-primary">Clients Thoughts</span>
       </h2>
 
       <p className="mt-5">
@@ -60,7 +54,7 @@ export default function Testimonial() {
           >
             <FaQuoteLeft
               size={50}
-              className={cn(i % 2 === 0 ? "text-white" : "text-[#ED1C24]")}
+              className={cn(i % 2 === 0 ? "text-white" : "text-primary")}
             />
             <p
               className={cn(

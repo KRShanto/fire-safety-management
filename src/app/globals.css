@@ -12,6 +12,7 @@
   :root {
     --background: #0a0a0a;
     --foreground: #f9f6ee;
+    --primary: #ed1c24;
   }
 }
 
@@ -30,10 +31,10 @@ body {
 }
 
 .stroke {
-  color: #ed1c24;
+  color: var(--foreground);
   -webkit-text-fill-color: white;
   -webkit-text-stroke-width: 1px;
-  -webkit-text-stroke-color: #ed1c24;
+  -webkit-text-stroke-color: var(--foreground);
 }
 
 .stroke-white {
