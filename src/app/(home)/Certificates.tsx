@@ -105,7 +105,7 @@ export default function Certificates() {
         <FaArrowCircleRight />
       </button>
       <div
-        className="absolute bottom-10 left-0 h-[240px] w-[780px]"
+        className="absolute bottom-20 left-0 h-[240px] w-[780px]"
         style={{
           background: "linear-gradient(96deg, #ED1C24 0.01%, #9E1C1C 78.5%)",
         }}
