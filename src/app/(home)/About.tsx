@@ -9,7 +9,7 @@ const alumniSans = Alumni_Sans({ subsets: ["latin"], weight: "700" });
 
 export default function About() {
   return (
-    <div className="relative z-20 flex items-center justify-center gap-20 border bg-[#F9F6EE] p-20">
+    <div className="relative z-20 flex items-center justify-center gap-20 bg-[#F9F6EE] p-20">
       {/* make it left-center */}
       <h2
         className="stroke absolute left-10 top-[50%] z-10 -translate-x-1/2 -translate-y-1/2 rotate-[270deg] transform text-7xl font-bold uppercase"
