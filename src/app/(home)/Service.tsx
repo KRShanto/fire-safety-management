@@ -28,7 +28,7 @@ export default function Service() {
   return (
     <div className="relative flex flex-col items-center bg-[#F9F6EE] p-20">
       <h2
-        className="stroke absolute left-0 top-[50%] z-10 -translate-y-1/2 rotate-[270deg] transform text-7xl font-bold uppercase"
+        className="stroke absolute left-10 top-[60%] z-10 origin-left -translate-y-1/2 rotate-[270deg] transform text-7xl font-bold uppercase"
         style={alumniSans.style}
       >
         Service

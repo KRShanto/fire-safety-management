@@ -11,7 +11,7 @@ export default function About() {
     <div className="relative z-20 flex items-center justify-center gap-20 bg-[#F9F6EE] p-20">
       {/* make it left-center */}
       <h2
-        className="stroke absolute left-0 top-[50%] z-10 -translate-y-1/2 rotate-[270deg] transform text-7xl font-bold uppercase"
+        className="stroke absolute left-10 top-[60%] z-10 origin-left -translate-y-1/2 rotate-[270deg] transform text-7xl font-bold uppercase"
         style={alumniSans.style}
       >
         About
