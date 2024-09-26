@@ -3,6 +3,7 @@ import Affiliates from "./Affiliates";
 import Certificates from "./Certificates";
 import Experience from "./Experience";
 import Hero from "./Hero";
+import LatestNews from "./LatestNews";
 import Partners from "./Partners";
 import Product from "./Product";
 import Service from "./Service";
@@ -22,6 +23,7 @@ export default function Home() {
       <Certificates />
       <Partners />
       <Testimonial />
+      <LatestNews />
     </div>
   );
 }
