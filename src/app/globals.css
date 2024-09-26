@@ -15,7 +15,11 @@
 }
 
 body {
-  color: var(--foreground);
-  background: var(--background);
+  /* color: var(--foreground); */
+  /* background: var(--background); */
   font-synthesis: none;
+}
+
+.trapezoid {
+  clip-path: polygon(50px 100%, calc(100% - 50px) 100%, 100% 0, 0 0);
 }
