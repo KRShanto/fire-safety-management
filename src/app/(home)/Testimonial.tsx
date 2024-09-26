@@ -1,3 +1,4 @@
+import { cn } from "@/lib/cn";
 import { Alumni_Sans, Montserrat } from "next/font/google";
 import { FaQuoteLeft, FaStar, FaStarHalf } from "react-icons/fa";
 
@@ -57,8 +58,18 @@ export default function Testimonial() {
               boxShadow: "4px 4px 4px 2px rgba(0, 0, 0, 0.10)",
             }}
           >
-            <FaQuoteLeft size={50} className="text-[#ED1C24]" />
-            <p className="text-center">{testimonial.description}</p>
+            <FaQuoteLeft
+              size={50}
+              className={cn(i % 2 === 0 ? "text-white" : "text-[#ED1C24]")}
+            />
+            <p
+              className={cn(
+                "text-center",
+                i % 2 === 0 ? "text-white" : "text-black",
+              )}
+            >
+              {testimonial.description}
+            </p>
             <div className="flex gap-3">
               {[...Array(5)].map((_, i) =>
                 i + 1 <= testimonial.star ? (

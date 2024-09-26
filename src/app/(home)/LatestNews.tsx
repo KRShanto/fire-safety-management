@@ -62,11 +62,11 @@ export default function LatestNews() {
             }}
           >
             <div className="relative h-[250px] bg-[#DEDCDC]">
-              <p className="absolute -bottom-5 right-5 flex flex-col items-center bg-[#ED1C24] px-2 py-1 text-white">
+              <div className="absolute -bottom-5 right-5 flex flex-col items-center bg-[#ED1C24] px-2 py-1 text-white">
                 {/* format: 16 Jan */}
                 <p>{moment(news.date).format("DD")}</p>
                 <p>{moment(news.date).format("MMM")}</p>
-              </p>
+              </div>
             </div>
             <h3 className="text-xl font-bold">{news.title}</h3>
             <p>{news.desciption}</p>

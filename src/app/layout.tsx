@@ -3,6 +3,7 @@ import { Poppins } from "next/font/google";
 import "./globals.css";
 import Navbar from "@/components/Navbar";
 import HeroVideo from "@/components/HeroVideo";
+import Footer from "@/components/Footer";
 
 const poppins = Poppins({ weight: "400", subsets: ["latin"] });
 
@@ -22,6 +23,7 @@ export default function RootLayout({
         <Navbar />
         <HeroVideo />
         {children}
+        <Footer />
       </body>
     </html>
   );
