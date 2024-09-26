@@ -3,6 +3,7 @@ import Affiliates from "./Affiliates";
 import Experience from "./Experience";
 import Hero from "./Hero";
 import Product from "./Product";
+import Service from "./Service";
 
 export default function Home() {
   return (
@@ -12,6 +13,7 @@ export default function Home() {
       <About />
       <Affiliates />
       <Product />
+      <Service />
     </div>
   );
 }

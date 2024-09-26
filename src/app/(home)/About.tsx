@@ -1,5 +1,4 @@
 import Image from "next/image";
-import React from "react";
 import { Montserrat, Alumni_Sans } from "next/font/google";
 import { MdFireTruck } from "react-icons/md";
 import { TbFireHydrant } from "react-icons/tb";
