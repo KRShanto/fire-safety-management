@@ -5,21 +5,33 @@
 :root {
   --background: #ffffff;
   --foreground: #171717;
+  --p: 50px;
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
     --background: #0a0a0a;
-    --foreground: #ededed;
+    --foreground: #f9f6ee;
   }
 }
 
 body {
   /* color: var(--foreground); */
-  /* background: var(--background); */
+  background: var(--background);
   font-synthesis: none;
 }
 
 .trapezoid {
-  clip-path: polygon(50px 100%, calc(100% - 50px) 100%, 100% 0, 0 0);
+  clip-path: polygon(var(--p) 100%, calc(100% - var(--p)) 100%, 100% 0, 0 0);
+}
+
+.trapezoid-inverse {
+  clip-path: polygon(0 100%, 100% 100%, calc(100% - var(--p)) 0, var(--p) 0);
+}
+
+.stroke {
+  color: #ed1c24;
+  -webkit-text-fill-color: white;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: #ed1c24;
 }
