@@ -35,3 +35,15 @@ body {
   -webkit-text-stroke-width: 1px;
   -webkit-text-stroke-color: #ed1c24;
 }
+
+.stroke-white {
+  color: white;
+  -webkit-text-fill-color: transparent;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: white;
+  text-shadow: none;
+}
+
+.text-white-shadow {
+  text-shadow: 0 0 10px white;
+}
