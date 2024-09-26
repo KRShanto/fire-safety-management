@@ -2,8 +2,6 @@ import React from "react";
 import Image from "next/image";
 import { Alumni_Sans, Montserrat } from "next/font/google";
 
-const montserrat = Montserrat({ subsets: ["latin"], weight: "700" });
-
 const rightSideImages = [
   {
     src: "/Home-product-2.png",
@@ -30,6 +28,8 @@ const rightSideImages = [
     title: "Personal Protective Equipment (PPE)",
   },
 ];
+
+const montserrat = Montserrat({ subsets: ["latin"], weight: "700" });
 const alumniSans = Alumni_Sans({ subsets: ["latin"], weight: "700" });
 
 export default function Product() {

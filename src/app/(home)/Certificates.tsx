@@ -39,34 +39,6 @@ export default function Certificates() {
       >
         Certificate
       </h2>
-      {/* <div className="z-20 flex w-[90rem] items-center gap-44">
-        <Image
-          src="/Certificate1.png"
-          alt="Certificates"
-          width={500}
-          height={500}
-        />
-
-        <div>
-          <h2 style={montserrat.style} className="mb-4 text-4xl">
-            We are <span className="text-[#ED1C24]">rjsc Certificate</span>
-          </h2>
-          <p>
-            At Fire and Safety Management, we pride ourselves on meeting the
-            highest standards tof compliance and professionalism. Our RJSC
-            certification is a testament to our commitment to legal and
-            operational excellence in Bangladesh. This certification confirms
-            our adherence to stringent regulations and our capability to provide
-            reliable safety and fire management solutions. It not only enhances
-            our credibility but also ensures that we are equipped to offer
-            top-tier service, training, and consultancy in safety management.
-          </p>
-
-          <button className="mt-10 rounded-md bg-[#ED1C24] px-10 py-3 text-sm font-bold text-white">
-            Learn More
-          </button>
-        </div>
-      </div> */}
 
       {certificates[current] && (
         <div className="z-20 flex w-[90rem] items-center gap-44">

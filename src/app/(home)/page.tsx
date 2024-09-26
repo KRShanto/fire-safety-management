@@ -6,6 +6,7 @@ import Hero from "./Hero";
 import Partners from "./Partners";
 import Product from "./Product";
 import Service from "./Service";
+import Testimonial from "./Testimonial";
 import Values from "./Values";
 
 export default function Home() {
@@ -20,6 +21,7 @@ export default function Home() {
       <Values />
       <Certificates />
       <Partners />
+      <Testimonial />
     </div>
   );
 }
