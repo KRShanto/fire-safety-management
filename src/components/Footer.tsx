@@ -1,3 +1,5 @@
+"use client";
+
 import { Alumni_Sans, Montserrat } from "next/font/google";
 import Image from "next/image";
 import { BsBoxSeam } from "react-icons/bs";
@@ -12,6 +14,8 @@ import {
   FaPhone,
   FaYoutube,
 } from "react-icons/fa";
+import { usePathname } from "next/navigation";
+import { cn } from "@/lib/cn";
 
 const insights = [
   { src: "/Insight1.png", title: "Product", icon: <BsBoxSeam /> },
@@ -21,6 +25,8 @@ const insights = [
 ];
 
 export default function Footer() {
+  const pathname = usePathname();
+
   return (
     <div className="relative flex flex-col items-center bg-[#F9F6EE] pt-40">
       {/* Careers */}
@@ -46,7 +52,7 @@ export default function Footer() {
           labore iste. Optio voluptatem provident
         </p>
 
-        <button className="bg-primary mt-5 rounded-lg px-10 py-3 font-semibold text-white">
+        <button className="mt-5 rounded-lg bg-primary px-10 py-3 font-semibold text-white">
           Start Your Career Here
         </button>
 
@@ -56,33 +62,38 @@ export default function Footer() {
       </div>
 
       {/* Insights */}
-      <div className="font-montserrat flex flex-col items-center p-20 font-bold">
-        <h2 className="text-4xl uppercase">
-          <span className="text-primary">F</span>
-          <span className="text-[#2D59A9]">S</span>
-          <span className="text-[#202A5E]">M</span> <span>Insights</span>
-        </h2>
+      {pathname !== "/" ? (
+        <div className="flex flex-col items-center p-20 font-montserrat font-bold">
+          <h2 className="text-4xl uppercase">
+            <span className="text-primary">F</span>
+            <span className="text-[#2D59A9]">S</span>
+            <span className="text-[#202A5E]">M</span> <span>Insights</span>
+          </h2>
 
-        <div className="mt-10 grid grid-cols-2 gap-5">
-          {insights.map((insight, i) => (
-            <div
-              key={i}
-              className="hover:text-primary flex cursor-pointer flex-col items-center justify-center gap-5 text-white transition-all duration-300"
-              style={{
-                width: "600px",
-                height: "250px",
-                background: `url('${insight.src}')`,
-                backgroundSize: "cover",
-                backgroundPosition: "center",
-                backgroundRepeat: "no-repeat",
-              }}
-            >
-              <div className="text-8xl">{insight.icon}</div>
-              <h3 className="text-4xl">{insight.title}</h3>
-            </div>
-          ))}
+          <div className="mt-10 grid grid-cols-2 gap-5">
+            {insights.map((insight, i) => (
+              <div
+                key={i}
+                className="flex cursor-pointer flex-col items-center justify-center gap-5 text-white transition-all duration-300 hover:text-primary"
+                style={{
+                  width: "600px",
+                  height: "250px",
+                  background: `url('${insight.src}')`,
+                  backgroundSize: "cover",
+                  backgroundPosition: "center",
+                  backgroundRepeat: "no-repeat",
+                }}
+              >
+                <div className="text-8xl">{insight.icon}</div>
+                <h3 className="text-4xl">{insight.title}</h3>
+              </div>
+            ))}
+          </div>
         </div>
-      </div>
+      ) : (
+        // Add some padding if the page is home
+        <div className="p-20"></div>
+      )}
 
       {/* Actual footer */}
       <footer
@@ -97,7 +108,7 @@ export default function Footer() {
       >
         <div className="flex justify-center gap-5">
           {Array.from({ length: 4 }).map((_, i) => (
-            <div key={i} className="bg-primary h-16 w-16 rounded-full p-3">
+            <div key={i} className="h-16 w-16 rounded-full bg-primary p-3">
               <Image
                 alt="Footer icon"
                 src={`/Footer-icon-${i + 1}.svg`}

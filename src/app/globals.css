@@ -31,10 +31,10 @@ body {
 }
 
 .stroke {
-  color: var(--foreground);
+  color: var(--primary);
   -webkit-text-fill-color: white;
   -webkit-text-stroke-width: 1px;
-  -webkit-text-stroke-color: var(--foreground);
+  -webkit-text-stroke-color: var(--primary);
 }
 
 .stroke-white {
