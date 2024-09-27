@@ -24,11 +24,11 @@ const services = [
 export default function Service() {
   return (
     <div className="relative flex flex-col items-center bg-[#F9F6EE] p-20">
-      <h2 className="stroke absolute left-10 top-[60%] z-10 origin-left -translate-y-1/2 rotate-[270deg] transform text-7xl font-bold uppercase">
+      <h2 className="stroke absolute left-10 top-[60%] z-10 origin-left -translate-y-1/2 rotate-[270deg] transform font-alumni text-7xl font-bold uppercase">
         Service
       </h2>
 
-      <h2 className="font-montserrat mb-4 text-4xl font-bold uppercase">
+      <h2 className="mb-4 font-montserrat text-4xl font-bold uppercase">
         What <span className="text-primary">professional training</span> we
         offer
       </h2>
@@ -51,14 +51,14 @@ export default function Service() {
               height={300}
               alt={service.title}
             />
-            <h3 className="font-montserrat absolute left-[50%] top-[50%] w-full -translate-x-1/2 text-center text-xl font-bold text-white">
+            <h3 className="absolute left-[50%] top-[50%] w-full -translate-x-1/2 text-center font-montserrat text-xl font-bold text-white">
               {service.title}
             </h3>
           </div>
         ))}
       </div>
 
-      <button className="bg-primary mt-10 rounded-md px-10 py-3 font-bold text-white">
+      <button className="mt-10 rounded-md bg-primary px-10 py-3 font-bold text-white">
         Learn More
       </button>
     </div>
