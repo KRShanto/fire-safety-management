@@ -51,7 +51,7 @@ body {
 
 @layer utilities {
   .overlay {
-    @apply absolute left-0 right-0 top-0 z-10 h-full w-full bg-black/60;
+    @apply absolute left-0 right-0 top-0 z-10 h-full w-full;
   }
   .btn-primary {
     @apply rounded-md bg-[#ed1c24] px-4 py-3 font-semibold text-white;

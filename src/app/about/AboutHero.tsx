@@ -9,7 +9,7 @@ export default function AboutHero() {
         backgroundPosition: "center",
       }}
     >
-      <div className="overlay" />
+      <div className="overlay bg-black/60" />
       <div className="absolute left-[50%] z-20 mx-auto flex h-full w-full max-w-7xl -translate-x-[50%] flex-col justify-center">
         <div className="mt-32 leading-[1]">
           <h1 className="font-montserrat text-[64px] font-bold text-white">
