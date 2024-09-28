@@ -1,4 +1,3 @@
-import HeroBanner from "@/../public/about-hero-banner.png";
 export default function AboutHero() {
   return (
     <div
