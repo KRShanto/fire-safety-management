@@ -4,6 +4,7 @@ import Advice from "./Advice";
 import BusinessLinks from "./BusinessLinks";
 import Experience from "./Experience";
 import OurCoreActivity from "./OurCoreActivity";
+import OurPrincipleAndPolice from "./OurPrincipleAndPolice";
 import OurStrategy from "./OurStrategy";
 
 export default function AboutPage() {
@@ -15,6 +16,7 @@ export default function AboutPage() {
       <BusinessLinks />
       <OurStrategy />
       <OurCoreActivity />
+      <OurPrincipleAndPolice />
       <Testimonial />
     </div>
   );
