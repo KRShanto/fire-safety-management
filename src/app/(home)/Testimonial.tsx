@@ -1,5 +1,4 @@
 import { cn } from "@/lib/cn";
-import { Alumni_Sans, Montserrat } from "next/font/google";
 import { FaQuoteLeft, FaStar, FaStarHalf } from "react-icons/fa";
 
 const testimonials = [
