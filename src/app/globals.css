@@ -31,10 +31,10 @@ body {
 }
 
 .stroke {
-  color: var(--foreground);
+  color: var(--primary);
   -webkit-text-fill-color: white;
   -webkit-text-stroke-width: 1px;
-  -webkit-text-stroke-color: var(--foreground);
+  -webkit-text-stroke-color: var(--primary);
 }
 
 .stroke-white {
@@ -55,5 +55,17 @@ body {
   }
   .btn-primary {
     @apply rounded-md bg-[#ed1c24] px-4 py-3 font-semibold text-white;
+  }
+  .headerBG {
+    background-image: url("../../public/HeaderBG.png");
+    background-size: cover;
+    position: relative;
+  }
+  .headerBGOverlay {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
   }
 }
