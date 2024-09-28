@@ -1,5 +1,5 @@
-import Testimonial from "../(home)/Testimonial";
 import AboutHero from "./AboutHero";
+import AboutTestimonial from "./AboutTestimonial";
 import Advice from "./Advice";
 import BusinessLinks from "./BusinessLinks";
 import Experience from "./Experience";
@@ -17,7 +17,7 @@ export default function AboutPage() {
       <OurStrategy />
       <OurCoreActivity />
       <OurPrincipleAndPolice />
-      <Testimonial />
+      <AboutTestimonial />
     </div>
   );
 }
