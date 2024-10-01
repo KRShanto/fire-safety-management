@@ -5,9 +5,9 @@ export default function NewsComponent() {
   return (
     <div>
       
-      <section
+      {/* <section
         className="relative -mt-24 h-[530px] bg-cover bg-center"
-        style={{ backgroundImage: "url(/heroone.png)" }}
+        style={{ backgroundImage: "url(/heroone.png)",backgroundRepeat: "no-repeat", }}
       >
          <div className="absolute inset-0 bg-black opacity-50"></div>
         <div className="absolute inset-0 flex flex-col items-start justify-center pl-48 font-montserrat">
@@ -16,7 +16,7 @@ export default function NewsComponent() {
           Stay informed with the latest in safety technology, training and trends
           </p>
         </div>
-      </section>
+      </section> */}
       <NewsSection/>
     </div>
   )

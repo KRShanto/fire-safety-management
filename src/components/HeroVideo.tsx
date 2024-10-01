@@ -20,10 +20,13 @@ export default function HeroVideo() {
           position: "absolute",
           top: "50%",
           left: "50%",
-          width: "100%",
-          height: "105%",
+          width: "100vw",
+          height: "100vh",
           objectFit: "cover",
-          transform: "translate(-50%, -50%)",
+          minWidth: "100%",
+          minHeight: "100%",
+          
+          transform: "translate(-50%, -49%)",
           zIndex: 0,
         }}
       ></video>

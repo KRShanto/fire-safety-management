@@ -4,7 +4,8 @@ import React from "react";
 
 export default function Navbar() {
   return (
-    <nav className="trapezoid sticky top-0 z-50 mx-auto flex w-[70rem] items-center justify-center gap-8 bg-[#F9F6EE] uppercase">
+    <nav className="trapezoid sticky top-0 z-50 mx-auto flex w-[70rem]
+     items-center justify-center gap-8 bg-[#F9F6EE] uppercase shadow-2xl border-b border-gray-400">
       <Link href="/about">About us</Link>
       <Link href="/products">Products</Link>
       <Link href="/services">Services</Link>

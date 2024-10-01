@@ -31,7 +31,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className={`${alumniSans.variable} ${montserrat.variable}`}>
-      <body style={inter.style}>
+      <body style={inter.style} >
         <Navbar />
         <HeroVideo />
         {children}
