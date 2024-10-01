@@ -106,79 +106,79 @@ export default function Footer() {
           color: "white",
         }}
       >
-        <div className="flex justify-center gap-5">
+        <div className="flex justify-center gap-5 mb-0">
           {Array.from({ length: 4 }).map((_, i) => (
-            <div key={i} className="h-16 w-16 rounded-full bg-primary p-3">
+            <div key={i} className="h-20 w-20 rounded-full bg-primary p-3">
               <Image
                 alt="Footer icon"
                 src={`/Footer-icon-${i + 1}.svg`}
-                width={50}
-                height={50}
+                width={55}
+                height={55}
               />
             </div>
           ))}
         </div>
 
-        <div className="flex gap-20">
-          <div>
-            <Image
-              alt="Footer logo"
-              src="/Footer-FSM.png"
-              width={500}
-              height={200}
-            />
-            <p className="ml-28 w-[20rem]">
-              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sint
-              alias id eligendi fugiat ad dolorum dignissimos neque, molestiae
-              quas eos.
-            </p>
-          </div>
-          <div className="mt-7 flex flex-col gap-7 text-lg">
-            <h3 className="text-2xl font-bold uppercase">Navigate</h3>
-            <Link href="/">Home</Link>
-            <Link href="/about">About Us</Link>
-            <Link href="/products">Products</Link>
-            <Link href="/services">Services</Link>
-            <Link href="/library">Library</Link>
-            <Link href="/career">Career</Link>
-            <Link href="/contact">Contact Us</Link>
-          </div>
-          <div className="mt-7 flex flex-col gap-7 text-lg">
-            <h3 className="text-2xl font-bold uppercase">Services</h3>
-            <Link href="/services">Emergency Evacuation Process Training</Link>
-            <Link href="/services">Basic Fire Training</Link>
-            <Link href="/services">Basic Safety Training</Link>
-          </div>
-          <div className="mt-7 flex flex-col gap-7 text-lg">
-            <h3 className="text-2xl font-bold uppercase">Library</h3>
-            <Link href="/library">Gallery</Link>
-            <Link href="/library">Achievements</Link>
-          </div>
-          <div className="mt-7 flex flex-col gap-7 text-lg">
-            <h3 className="text-2xl font-bold uppercase">Get in touch</h3>
-            <p>
-              <FaPhone className="mr-2 inline-block" />
-              +880 17070-37996
-            </p>
-            <p>
-              <MdEmail className="mr-2 inline-block" />
-              info@fsmbd.com <br /> fsm.info@gmail.com
-            </p>
-            <div className="flex gap-5">
-              <FaFacebook className="text-4xl" />
-              <FaInstagram className="text-4xl" />
-              <FaLinkedin className="text-4xl" />
-              <FaYoutube className="text-4xl" />
-            </div>
-          </div>
-        </div>
+        <div className="flex gap-6 m-8 mt-24 text-sm xl:gap-8 justify-between lg:gap-4 2xl:gap-6">
+  <div className="flex flex-col gap-1">
+    <Image
+      alt="Footer logo"
+      src="/Footer-FSM.png"
+      width={500}
+      height={200}
+    />
+    <p className="ml-24 w-[20rem] 2xl:ml-28 2xl:pl-2">
+      Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sint
+      alias id eligendi fugiat ad dolorum dignissimos neque, molestiae
+      quas eos.
+    </p>
+  </div>
+  <div className="mt-7 flex flex-col gap-4 lg:gap-5 text-lg">
+    <h3 className="text-2xl font-bold uppercase">Navigate</h3>
+    <Link href="/">Home</Link>
+    <Link href="/about">About Us</Link>
+    <Link href="/products">Products</Link>
+    <Link href="/services">Services</Link>
+    <Link href="/library">Library</Link>
+    <Link href="/career">Career</Link>
+    <Link href="/contact">Contact Us</Link>
+  </div>
+  <div className="mt-7 flex flex-col gap-4 lg:gap-5 text-lg">
+    <h3 className="text-2xl font-bold uppercase">Services</h3>
+    <Link href="/services">Emergency Evacuation Process Training</Link>
+    <Link href="/services">Basic Fire Training</Link>
+    <Link href="/services">Basic Safety Training</Link>
+  </div>
+  <div className="mt-7 flex flex-col gap-4 lg:gap-5 text-lg">
+    <h3 className="text-2xl font-bold uppercase">Library</h3>
+    <Link href="/library">Gallery</Link>
+    <Link href="/library">Achievements</Link>
+  </div>
+  <div className="mt-7 flex flex-col gap-4 lg:gap-5 text-lg mr-16">
+    <h3 className="text-2xl font-bold uppercase">Get in touch</h3>
+    <p>
+      <FaPhone className="mr-2 inline-block" />
+      +880 17070-37996
+    </p>
+    <p>
+      <MdEmail className="mr-2 inline-block" />
+      info@fsmbd.com <br /> fsm.info@gmail.com
+    </p>
+    <div className="flex gap-5">
+      <FaFacebook className="text-4xl" />
+      <FaInstagram className="text-4xl" />
+      <FaLinkedin className="text-4xl" />
+      <FaYoutube className="text-4xl" />
+    </div>
+  </div>
+</div>
 
-        <div className="mt-10 flex justify-between p-5 px-40 text-xl text-white">
-          <p>© All Rights Reserved By FSM 2024</p>
-          <p>
-            Developed By <b>Levant IT Solution</b>
-          </p>
-        </div>
+<div className="mt-10 flex flex-col lg:flex-row lg:justify-between p-5 px-40 text-xl text-white">
+  <p>© All Rights Reserved By FSM 2024</p>
+  <p>
+    Developed By <b>Levant IT Solution</b>
+  </p>
+</div>
       </footer>
     </div>
   );
