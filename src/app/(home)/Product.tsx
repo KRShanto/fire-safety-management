@@ -32,12 +32,12 @@ const rightSideImages = [
 export default function Product() {
   return (
     <div className="relative flex flex-col items-center bg-[#F9F6EE] p-20 pb-40">
-      <h2 className="stroke absolute right-10 top-[60%] z-10 origin-right -translate-y-1/2 rotate-[90deg] transform text-7xl font-bold uppercase">
+      <h2 className="stroke absolute right-10 top-[60%] z-10 origin-right -translate-y-1/2 rotate-[90deg] transform font-alumni text-7xl font-bold uppercase">
         Product
       </h2>
 
-      <h2 className="font-montserrat mb-4 text-4xl font-bold">
-        <span className="text-primary uppercase">Secured</span> the best for
+      <h2 className="mb-4 font-montserrat text-4xl font-bold">
+        <span className="uppercase text-primary">Secured</span> the best for
         you!
       </h2>
 

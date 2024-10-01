@@ -1,5 +1,4 @@
 import { cn } from "@/lib/cn";
-import { Alumni_Sans, Montserrat } from "next/font/google";
 import { FaQuoteLeft, FaStar, FaStarHalf } from "react-icons/fa";
 
 const testimonials = [
@@ -26,7 +25,7 @@ const testimonials = [
 export default function Testimonial() {
   return (
     <div className="relative flex flex-col items-center bg-[#F9F6EE] p-20 pb-40">
-      <h2 className="stroke absolute right-10 top-[60%] z-10 origin-right -translate-y-1/2 rotate-[90deg] transform text-7xl font-bold uppercase">
+      <h2 className="stroke absolute right-10 top-[60%] z-10 origin-right -translate-y-1/2 rotate-[90deg] transform font-alumni text-7xl font-bold uppercase">
         Testimonial
       </h2>
 
