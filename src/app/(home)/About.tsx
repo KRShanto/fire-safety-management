@@ -4,9 +4,9 @@ import { TbFireHydrant } from "react-icons/tb";
 
 export default function About() {
   return (
-    <div className="relative z-20 flex items-center justify-center gap-20 bg-[#F9F6EE] p-20">
+    <div className="relative z-20 flex items-center justify-center gap-20 bg-[#F9F6EE] p-10 2xl:p-20  ">
       {/* make it left-center */}
-      <h2 className="stroke font-alumni absolute left-10 top-[60%] z-10 origin-left -translate-y-1/2 rotate-[270deg] transform text-7xl font-bold uppercase">
+      <h2 className="stroke font-alumni absolute left-24 p-2 top-[60%] z-10 origin-left -translate-y-1/2 rotate-[270deg] transform text-7xl font-bold uppercase 2xl:left-10">
         About
       </h2>
 
@@ -18,12 +18,12 @@ export default function About() {
           alt="About"
           className="relative left-24 -z-10"
         />
-        <Image src="/About-large.png" width={400} height={500} alt="About" />
+        <Image src="/About-large.png" width={400} height={500} alt="About" className="relative left-12 " />
       </div>
 
-      <div>
-        <h2 className="text-lg text-[#F12602]">About Us</h2>
-        <h3 className="font-montserrat w-[50rem] text-[60px] font-bold uppercase leading-[4rem] text-[#303030]">
+      <div className="top-32px">
+        <h2 className="text-sm 2xl:text-lg text-[#F12602]">About Us</h2>
+        <h3 className="font-montserrat w-[50rem] text-[40px] 2xl:text-[60px] font-bold uppercase leading-[2.5rem] 2xl:leading-[4rem] text-[#303030]">
           Building trust <br /> saving lives
         </h3>
         <p className="w-[40rem] text-lg text-[#303030]">
