@@ -7,6 +7,8 @@ interface CardProps{
     description?:string;
     gradient?:boolean
 }
+
+
 export default function NewsCard({title,date,description,gradient}:CardProps) {
   return (
     <div>
@@ -17,6 +19,7 @@ export default function NewsCard({title,date,description,gradient}:CardProps) {
           {date}
         </div>
       </div>
+    
       <h2 className="font-bold text-lg mb-2">{title}</h2>
       <p className="text-gray-600 mb-4">{description}</p>
       <a href="#" className="text-black font-bold flex items-center">
