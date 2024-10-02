@@ -24,7 +24,7 @@ const services = [
 export default function Service() {
   return (
     <div className="relative flex flex-col items-center bg-[#F9F6EE] p-20">
-      <h2 className="stroke absolute left-10 top-[60%] z-10 origin-left -translate-y-1/2 rotate-[270deg] transform font-alumni text-7xl font-bold uppercase">
+      <h2 className="stroke absolute left-10 top-[60%] z-10 origin-left -translate-y-1/2 rotate-[270deg] transform font-alumni text-5xl font-bold uppercase 2xl:left-20 2xl:text-7xl">
         Service
       </h2>
 
@@ -39,28 +39,30 @@ export default function Service() {
         we ensure your environment is secure and compliant.
       </p>
 
-      <div className="mt-10 flex gap-5">
-        {services.map((service) => (
-          <div
-            key={service.title}
-            className="relative top-0 transition-all duration-300 hover:top-[-1rem]"
-          >
-            <Image
-              src={service.src}
-              width={300}
-              height={300}
-              alt={service.title}
-            />
-            <h3 className="absolute left-[50%] top-[50%] w-full -translate-x-1/2 text-center font-montserrat text-xl font-bold text-white">
-              {service.title}
-            </h3>
-          </div>
-        ))}
-      </div>
+      <div className="max-w-[1200px] flex flex-col items-center">
+        <div className="mt-10 flex gap-5">
+          {services.map((service) => (
+            <div
+              key={service.title}
+              className="relative top-0 transition-all duration-300 hover:top-[-1rem]"
+            >
+              <Image
+                src={service.src}
+                width={300}
+                height={300}
+                alt={service.title}
+              />
+              <h3 className="absolute left-[50%] top-[50%] w-full -translate-x-1/2 text-center font-montserrat text-xl font-bold text-white">
+                {service.title}
+              </h3>
+            </div>
+          ))}
+        </div>
 
-      <button className="mt-10 rounded-md bg-primary px-10 py-3 font-bold text-white">
-        Learn More
-      </button>
+        <button className="mt-10 rounded-md bg-primary px-10 py-3 font-bold text-white">
+          Learn More
+        </button>
+      </div>
     </div>
   );
 }

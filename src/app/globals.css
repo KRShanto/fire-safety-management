@@ -18,9 +18,8 @@
 
 @layer base {
   body {
-    /* color: var(--foreground); */
-    background: var(--background);
     font-synthesis: none;
+    background: var(--background);
   }
 }
 

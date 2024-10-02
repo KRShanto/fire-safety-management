@@ -25,7 +25,8 @@ const testimonials = [
 export default function Testimonial() {
   return (
     <div className="relative flex flex-col items-center bg-[#F9F6EE] p-20 pb-40">
-      <h2 className="stroke absolute right-10 top-[60%] z-10 origin-right -translate-y-1/2 rotate-[90deg] transform font-alumni text-7xl font-bold uppercase">
+      
+      <h2 className="stroke absolute right-10 top-[70%] z-10 origin-right -translate-y-1/2 rotate-[90deg] transform font-alumni text-5xl font-bold uppercase 2xl:right-20 2xl:text-7xl">
         Testimonial
       </h2>
 
@@ -38,7 +39,7 @@ export default function Testimonial() {
         helped them enhance their safety and security.
       </p>
 
-      <div className="mt-5 flex w-[100rem] gap-10">
+      <div className="mt-5 flex  gap-10 max-w-[1200px] ">
         {testimonials.map((testimonial, i) => (
           <div
             key={i}

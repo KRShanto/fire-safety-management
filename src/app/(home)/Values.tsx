@@ -115,7 +115,7 @@ export default function Values() {
         className="absolute"
       />
 
-      <h2 className="z-20 font-montserrat text-4xl font-bold">
+      <h2 className="relative z-20 font-montserrat text-4xl font-bold top-8">
         <span className="uppercase text-primary">Why</span> choose us?
       </h2>
 
@@ -141,7 +141,7 @@ export default function Values() {
           alt="Circle"
           className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2"
         />
-        <h2 className="text-white-shadow absolute left-[50%] top-[50%] z-40 -translate-x-1/2 -translate-y-1/2 font-alumni text-[220px] font-bold uppercase text-white">
+        <h2 className="text-white-shadow absolute left-[50%] top-[50%] z-40 -translate-x-1/2 -translate-y-1/2 font-alumni text-[200px] 2xl:text-[220px] font-bold uppercase text-white">
           V<span className="stroke-white">Alue</span>s
         </h2>
         {/* Starting Arrow top-left */}
@@ -166,73 +166,73 @@ export default function Values() {
         ></div>
         {/* Line Arrow top-left */}
         <div
-          className="absolute left-[-181px] top-[-248px] h-2 w-72 transform rounded-lg bg-white opacity-0 transition-opacity duration-300 ease-in-out"
+          className="absolute left-[-85px] 2xl:left-[-181px] top-[-248px] h-2 w-48 transform rounded-lg bg-white opacity-0 transition-opacity duration-300 ease-in-out 2xl:w-72"
           ref={lineArrowTopLeft}
         ></div>
         {/* Line Arrow top-right */}
         <div
-          className="absolute right-[-181px] top-[-248px] h-2 w-72 transform rounded-lg bg-white opacity-0 transition-opacity duration-300 ease-in-out"
+          className="absolute right-[-85px] 2xl:right-[-181px] top-[-248px] h-2 w-48 transform rounded-lg bg-white opacity-0 transition-opacity duration-300 ease-in-out 2xl:w-72"
           ref={lineArrowTopRight}
         ></div>
         {/* Line Arrow bottom-left */}
         <div
-          className="absolute bottom-[-248px] left-[-181px] h-2 w-72 transform rounded-lg bg-white opacity-0 transition-opacity duration-300 ease-in-out"
+          className="absolute bottom-[-248px] left-[-85px] 2xl:left-[-181px] h-2 w-48 transform rounded-lg bg-white opacity-0 transition-opacity duration-300 ease-in-out 2xl:w-72"
           ref={lineArrowBottomLeft}
         ></div>
         {/* Line Arrow bottom-right */}
         <div
-          className="absolute bottom-[-248px] right-[-181px] h-2 w-72 transform rounded-lg bg-white opacity-0 transition-opacity duration-300 ease-in-out"
+          className="absolute bottom-[-248px] right-[-85px] 2xl:right-[-181px] h-2 w-48 transform rounded-lg bg-white opacity-0 transition-opacity duration-300 ease-in-out 2xl:w-72"
           ref={lineArrowBottomRight}
         ></div>
         {/* Line Arrow middle-left */}
         <div
-          className="absolute left-[-173px] top-[50%] h-2 w-72 transform rounded-lg bg-white opacity-0 transition-opacity duration-300 ease-in-out"
+          className="absolute left-[-20px] 2xl:left-[-173px] top-[50%] h-2 w-32 transform rounded-lg bg-white opacity-0 transition-opacity duration-300 ease-in-out 2xl:w-72"
           ref={lineArrowMiddleLeft}
         ></div>
         {/* Line Arrow middle-right */}
         <div
-          className="absolute right-[-173px] top-[50%] h-2 w-72 transform rounded-lg bg-white opacity-0 transition-opacity duration-300 ease-in-out"
+          className="absolute right-[-20px] 2xl:right-[-173px]  top-[50%] h-2 w-32 transform rounded-lg bg-white opacity-0 transition-opacity duration-300 ease-in-out 2xl:w-72"
           ref={lineArrowMiddleRight}
         ></div>
 
         {/* Top left text */}
         <h3
-          className="absolute left-[-315px] top-[-258px] text-xl font-semibold text-white opacity-0 transition-opacity duration-300 ease-in-out"
+          className="absolute left-[-225px] 2xl:left-[-315px] top-[-258px] text-xl font-semibold text-white opacity-0 transition-opacity duration-300 ease-in-out"
           ref={topLeftText}
         >
           Acountability
         </h3>
         {/* Top right text */}
         <h3
-          className="absolute right-[-315px] top-[-270px] text-xl font-semibold text-white opacity-0 transition-opacity duration-300 ease-in-out"
+          className="absolute right-[-225px] 2xl:right-[-315px] top-[-270px] text-xl font-semibold text-white opacity-0 transition-opacity duration-300 ease-in-out"
           ref={topRightText}
         >
           Customer <br /> Satisfaction
         </h3>
         {/* Bottom left text */}
         <h3
-          className="absolute bottom-[-265px] left-[-315px] text-xl font-semibold text-white opacity-0 transition-opacity duration-300 ease-in-out"
+          className="absolute bottom-[-265px] left-[-225px] 2xl:left-[-315px] text-xl font-semibold text-white opacity-0 transition-opacity duration-300 ease-in-out"
           ref={bottomLeftText}
         >
           High-quality <br /> products
         </h3>
         {/* Bottom right text */}
         <h3
-          className="absolute bottom-[-258px] right-[-380px] text-xl font-semibold text-white opacity-0 transition-opacity duration-300 ease-in-out"
+          className="absolute bottom-[-258px] right-[-280px] 2xl:right-[-380px] text-xl font-semibold text-white opacity-0 transition-opacity duration-300 ease-in-out"
           ref={bottomRightText}
         >
           Team & Leadership
         </h3>
         {/* Middle left text */}
         <h3
-          className="absolute left-[-290px] top-[-10px] text-xl font-semibold text-white opacity-0 transition-opacity duration-300 ease-in-out"
+          className="absolute left-[-145px] 2xl:left-[-290px] top-[-10px] text-xl font-semibold text-white opacity-0 transition-opacity duration-300 ease-in-out"
           ref={middleLeftText}
         >
           Innovation
         </h3>
         {/* Middle right text */}
         <h3
-          className="absolute right-[-440px] top-[-20px] text-xl font-semibold text-white opacity-0 transition-opacity duration-300 ease-in-out"
+          className="absolute right-[-275px]  2xl:right-[-440px] top-[-20px] text-xl font-semibold text-white opacity-0 transition-opacity duration-300 ease-in-out"
           ref={middleRightText}
         >
           Adopting the newest <br /> Technologies & Standards
