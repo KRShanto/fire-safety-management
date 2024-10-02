@@ -30,12 +30,12 @@ export default function Certificates() {
 
   return (
     <div className="relative flex justify-center bg-[#F9F6EE] p-20 pb-40">
-      <h2 className="stroke font-alumni absolute right-10 top-[60%] z-10 origin-right -translate-y-1/2 rotate-[90deg] transform text-7xl font-bold uppercase">
+      <h2 className="stroke font-alumni absolute right-10 top-[60%] z-10 origin-right -translate-y-1/2 rotate-[90deg] transform text-5xl font-bold uppercase 2xl:right-20 2xl:text-7xl">
         Certificate
       </h2>
 
       {certificates[current] && (
-        <div className="z-20 flex w-[90rem] items-center gap-44">
+        <div className="z-20 flex max-w-[1200px] items-center gap-44 ">
           <Image
             src={certificates[current].src}
             alt="Certificates"
@@ -44,7 +44,7 @@ export default function Certificates() {
           />
 
           <div>
-            <h2 className="font-montserrat mb-4 text-4xl font-bold">
+            <h2 className="font-montserrat mb-4 text-4xl font-bold ">
               {certificates[current].title.split("##").map((text, i) =>
                 i % 2 === 0 ? (
                   text
@@ -55,7 +55,7 @@ export default function Certificates() {
                 ),
               )}
             </h2>
-            <p>{certificates[current].description}</p>
+            <p className="text-justify">{certificates[current].description}</p>
 
             <button className="bg-primary mt-10 rounded-md px-10 py-3 text-sm font-bold text-white">
               Learn More
@@ -65,13 +65,13 @@ export default function Certificates() {
       )}
 
       <button
-        className="text-3xl text-red-500 active:scale-95"
+        className="relative text-3xl text-red-500 active:scale-95 left-2 2xl:left-6"
         onClick={() => setCurrent((current + 1) % certificates.length)}
       >
         <FaArrowCircleRight />
       </button>
       <div
-        className="absolute bottom-20 left-0 h-[240px] w-[780px]"
+        className="absolute bottom-20 left-0 h-[240px] w-[640px] 2xl:w-[880] "
         style={{
           background: "linear-gradient(96deg, #ED1C24 0.01%, #9E1C1C 78.5%)",
         }}

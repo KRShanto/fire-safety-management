@@ -32,7 +32,7 @@ const rightSideImages = [
 export default function Product() {
   return (
     <div className="relative flex flex-col items-center bg-[#F9F6EE] p-20 pb-40">
-      <h2 className="stroke absolute right-10 top-[60%] z-10 origin-right -translate-y-1/2 rotate-[90deg] transform font-alumni text-7xl font-bold uppercase">
+      <h2 className="stroke absolute right-10 top-[60%] z-10 origin-right -translate-y-1/2 rotate-[90deg] transform font-alumni text-5xl font-bold uppercase 2xl:right-20 2xl:text-7xl">
         Product
       </h2>
 
@@ -47,7 +47,7 @@ export default function Product() {
         protection and performance.
       </p>
 
-      <div className="flex h-[50rem] w-[90rem] gap-5">
+      <div className="flex h-[50rem] max-w-[1200px] gap-5">
         <div className="relative w-[50%]">
           <Image
             src="/Home-product-1-up.png"
@@ -60,15 +60,15 @@ export default function Product() {
             alt="Fire & Safety Gear"
             width={900}
             height={800}
-            className="relative -top-[18.5rem]"
+            className="relative -top-[15.35rem] "
           />
 
-          <h3 className="absolute -bottom-20 left-2 text-5xl font-bold text-white">
+          <h3 className="absolute bottom-16 left-2 text-5xl font-bold text-white">
             Smoke & Gas Detection Appliances
           </h3>
         </div>
 
-        <div className="grid w-[50%] grid-cols-2 gap-2">
+        <div className="grid w-[50%] grid-cols-2 gap-2 h-[100px]">
           {rightSideImages.map((image, index) => (
             <div key={index} className="relative">
               <Image
@@ -77,7 +77,7 @@ export default function Product() {
                 width={400}
                 height={400}
               />
-              <h3 className="absolute bottom-2 left-2 text-3xl font-bold text-white">
+              <h3 className="absolute bottom-4 left-2 text-2xl 2xl:text-3xl 2xl:bottom-5   text-white">
                 {image.title}
               </h3>
             </div>

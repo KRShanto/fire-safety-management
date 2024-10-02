@@ -34,7 +34,7 @@ export default function Hero() {
       </div>
 
       <div
-        className="mt-10 flex justify-center gap-5 opacity-50"
+        className="mt-10 flex justify-center gap-5 opacity-50 "
         style={{ position: "relative", zIndex: 2 }}
       >
         <div className="bg-primary h-[150px] w-[128px]"></div>
