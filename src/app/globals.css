@@ -6,6 +6,8 @@
   --background: #ffffff;
   --foreground: #171717;
   --p: 50px;
+  --border-color: #ff0000; /* Border color */
+
 }
 
 @media (prefers-color-scheme: dark) {
@@ -13,21 +15,59 @@
     --background: #0a0a0a;
     --foreground: #f9f6ee;
     --primary: #ed1c24;
+    
   }
 }
 
 @layer base {
   body {
     font-synthesis: none;
-    background: var(--background);
+  
   }
 }
 
 @layer utilities {
-  .trapezoid {
-    clip-path: polygon(var(--p) 100%, calc(100% - var(--p)) 100%, 100% 0, 0 0);
+   .trapezoid-wrapper {
+    position: sticky; 
+    top: 0; 
+    z-index: 50; 
+    padding: 0;
   }
 
+  .trapezoid {
+    clip-path: polygon(var(--p) 100%, calc(100% - var(--p)) 100%, 100% 0, 0 0);
+    position: relative;
+    z-index: 10;
+  }
+
+  .trapezoid-wrapper::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 390px;
+    right: 390px;
+    bottom: 0;
+    clip-path: polygon(var(--p) 100%, calc(100% - var(--p)) 100%, 100% 0, 0 0);
+    border: 3px solid var(--border-color);
+    background-color: red;
+    z-index: 5;
+}
+
+
+@media (max-width: 1366px) {
+    .trapezoid-wrapper::before {
+        left: 121px;  
+        right: 121px; 
+    }
+}
+
+
+@media (max-width: 768px) {
+    .trapezoid-wrapper::before {
+        left: 20px;  
+        right: 20px;
+    }
+}
   .trapezoid-inverse {
     clip-path: polygon(0 100%, 100% 100%, calc(100% - var(--p)) 0, var(--p) 0);
   }
@@ -67,5 +107,8 @@
     width: 100%;
     height: 100%;
     background-color: rgba(0, 0, 0, 0.5);
+  }
+  .nav-border-color{
+    border-color: var(--border-color);
   }
 }
