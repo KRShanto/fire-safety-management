@@ -69,7 +69,7 @@
     }
 }
   .trapezoid-inverse {
-    clip-path: polygon(0 100%, 100% 100%, calc(100% - var(--p)) 0, var(--p) 0);
+    clip-path: polygon(0 105%, 100% 105%, calc(100% - var(--p)) 0, var(--p) 0);
   }
 
   .stroke {

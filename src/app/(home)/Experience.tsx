@@ -27,7 +27,8 @@ export default function Experience() {
         position: "relative",
         zIndex: 2,
       }}
-      className="trapezoid-inverse mx-auto flex w-[70rem] items-center justify-evenly bg-[#F9F6EE]"
+      className="trapezoid-inverse mx-auto flex w-[70rem]
+       items-center justify-evenly bg-[#F9F6EE] "
     >
       {experience.map((item, i) => (
         <div
