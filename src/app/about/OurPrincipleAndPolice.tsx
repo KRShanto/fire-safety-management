@@ -79,7 +79,7 @@ export default function OurPrincipleAndPolicy() {
         </p>
       </div>
       {/* principle and police card */}
-      <div className="mt-4 grid grid-cols-2 gap-x-3 gap-y-20 py-10">
+      <div className="mt-4 grid grid-cols-2 gap-x-3 gap-y-20 py-10 max-w-[1200px]">
         {principleAndPolicy.map((pnp, index) => (
           <div
             key={pnp.id}
