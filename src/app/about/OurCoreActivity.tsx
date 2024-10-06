@@ -36,23 +36,23 @@ export default function OurCoreActivity() {
       className="relative h-[790px]"
       style={{
         background: "url(/activity-bg-image.png)",
-        backgroundRepeat: "repeat-x",
+        
       }}
     >
       <div className="overlay bg-[#ED1C24] opacity-95" />
-      <div className="trapezoid absolute left-[50%] top-0 z-30 mx-auto flex h-[104px] w-[70rem] -translate-x-[50%] items-center justify-center gap-8 bg-[#F9F6EE]">
+      <div className="trapezoid absolute left-[41%] 2xl:left-[29%] top-0 z-30 mx-auto flex h-[104px] w-[70rem] -translate-x-[50%] items-center justify-center gap-8 bg-[#F9F6EE]">
         <h1 className="mr-5 text-center text-[40px] font-bold">
           Our <span className="font-poppins text-[#ED1C24]">CORE ACTIVITY</span>
         </h1>
       </div>
       {/* activity card section */}
-      <div className="absolute left-[50%] z-30 mx-auto flex h-full w-full max-w-7xl -translate-x-[50%] items-center justify-center">
+      <div className="absolute left-[49%] z-30 mx-auto flex h-full w-full max-w-[1200px] -translate-x-[50%] -translate-y-[15%] items-center justify-center">
         <div className="grid w-full grid-cols-4 gap-x-3">
           {activities.map((activity) => {
             return (
               <div
                 key={activity.id}
-                className="group relative h-[345px] w-full cursor-pointer bg-cover bg-center duration-300 before:absolute before:left-0 before:top-0 before:h-full before:w-full before:bg-white/70 before:duration-500 hover:-translate-y-5 hover:duration-500 before:hover:bg-red-500/70"
+                className="group relative h-[345px] w-[290px] cursor-pointer bg-cover bg-center duration-300 before:absolute before:left-0 before:top-0 before:h-full before:w-full before:bg-white/70 before:duration-500 hover:-translate-y-5 hover:duration-500 before:hover:bg-red-500/70"
                 style={{
                   backgroundImage: `url(${activity.bgImageSrc})`,
                 }}

@@ -35,7 +35,7 @@ export default function OurStrategy() {
       <h1 className="mr-5 text-center text-[40px] font-bold">
         Our <span className="font-poppins text-[#ED1C24]">STRATEGY</span>
       </h1>
-      <div className="grid grid-cols-4 gap-x-3">
+      <div className="grid grid-cols-4 gap-x-3 max-w-[1200px]">
         {ourStrategy.map((strategy) => (
           <div
             key={strategy.id}

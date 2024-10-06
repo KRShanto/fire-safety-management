@@ -38,7 +38,7 @@ export default function AboutTestimonial() {
         helped them enhance their safety and security.
       </p>
 
-      <div className="mt-5 grid w-[100rem] grid-cols-3 gap-10">
+      <div className="relative mt-5 grid w-[100rem] max-w-[1200px] grid-cols-3 gap-10 -left-8">
         {testimonials.map((testimonial, i) => (
           <div
             key={i}
