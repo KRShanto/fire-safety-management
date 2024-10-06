@@ -27,11 +27,14 @@
 }
 
 @layer utilities {
-   .trapezoid-wrapper {
-    position: sticky; 
-    top: 0; 
-    z-index: 50; 
-    padding: 0;
+
+  .footer-trapezoid {
+    position: relative;
+    z-index: 0;
+    clip-path: polygon(22.9% 12.8%, 76.9% 13%, 80% 0%, 100% 0%, 100% 66%, 100% 100%, 66% 100%, 33% 100%, 0% 100%, 0% 66%, 0% 0%, 20% 0%);
+   
+    height: 700px; 
+    width: 100%;
   }
 
   .trapezoid {
@@ -39,13 +42,19 @@
     position: relative;
     z-index: 10;
   }
-
+  .trapezoid-wrapper {
+    position: sticky; 
+    top: 0; 
+    z-index: 50; 
+    padding: 0;
+    overflow: hidden;
+  }
   .trapezoid-wrapper::before {
     content: '';
     position: absolute;
     top: 0;
-    left: 390px;
-    right: 390px;
+    left: 8%;
+    right: 8%;
     bottom: 0;
     clip-path: polygon(var(--p) 100%, calc(100% - var(--p)) 100%, 100% 0, 0 0);
     border: 3px solid var(--border-color);
@@ -53,23 +62,24 @@
     z-index: 5;
 }
 
-
-@media (max-width: 1366px) {
-    .trapezoid-wrapper::before {
-        left: 121px;  
-        right: 121px; 
-    }
+@media (max-width: 1536px) {
+  .trapezoid-wrapper::before {
+      left: 8.6%;  
+      right: 8.6%; 
+  }
+}
+@media (max-width: 1920px) {
+  .trapezoid-wrapper::before {
+      left: 8.6%;  
+      right: 8.6%; 
+  }
 }
 
 
-@media (max-width: 768px) {
-    .trapezoid-wrapper::before {
-        left: 20px;  
-        right: 20px;
-    }
-}
+
+
   .trapezoid-inverse {
-    clip-path: polygon(0 105%, 100% 105%, calc(100% - var(--p)) 0, var(--p) 0);
+    clip-path: polygon(0 110%, 100% 110%, calc(100% - var(--p)) 0, var(--p) 0);
   }
 
   .stroke {
