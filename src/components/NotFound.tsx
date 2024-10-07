@@ -5,10 +5,45 @@ import { IoHammerOutline } from "react-icons/io5";
 import { CiHome } from "react-icons/ci";
 
 import { motion } from "framer-motion";
+import { useState } from "react";
 
 export default function NotFound() {
+  const [isToggled, setIsToggled] = useState(false);
   return (
     <div className="-mt-24 flex min-h-screen flex-col items-center justify-center bg-red-100 px-4">
+      <div>
+        <motion.div
+          style={{ width: "200px", height: "200px", borderRadius: "20px" }}
+          animate={{
+            width: isToggled ? "300px" : "500px", // Animate width
+            // height: isToggled ? "300px" : "200px", // Animate height
+            backgroundColor: isToggled ? "#ff6699" : "#6699ff",
+          }}
+          transition={{
+            duration: 1, // Duration of the animation in seconds
+            ease: "easeInOut", // Easing function
+          }}
+        />
+
+        <button onClick={() => setIsToggled(!isToggled)}>
+          Toggle Background Color
+        </button>
+      </div>
+      <motion.div
+        style={{ color: "white" }}
+        animate={{
+          x: 20,
+          backgroundColor: "#000",
+          boxShadow: "10px 10px 0 rgba(0, 0, 0, 0.2)",
+          position: "fixed",
+          transitionEnd: {
+            display: "none",
+          },
+        }}
+      >
+        Hi bro
+      </motion.div>
+
       <motion.div
         className="text-center"
         initial={{ opacity: 0, y: -20 }}

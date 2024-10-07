@@ -26,7 +26,7 @@ export default function Values() {
   const middleRightText = useRef<HTMLDivElement>(null);
 
   const isInView = useInView(viewDevRef, {
-    amount: 0.6,
+    amount: 0.5,
   });
 
   const { scrollYProgress } = useScroll();
