@@ -11,13 +11,13 @@ export default function MapComponent() {
   return (
     <>
       <section
-        className="relative -mt-24 h-[530px] bg-cover bg-center"
+        className="relative -mt-28 h-[530px] bg-cover bg-center"
         style={{ backgroundImage: "url(/heroone.png)" }}
       >
-         <div className="absolute inset-0 bg-black opacity-50"></div>
+        <div className="absolute inset-0 bg-black opacity-50"></div>
         <div className="absolute inset-0 flex flex-col items-start justify-center pl-48 font-montserrat">
           <h1 className="mb-4 text-5xl font-bold text-white">FSM Connect</h1>
-          <p className="mb-8 text-xl text-white font-poppins">
+          <p className="mb-8 font-poppins text-xl text-white">
             Reach out for Expert Safety Support and Services
           </p>
         </div>
@@ -39,13 +39,13 @@ export default function MapComponent() {
                 <span className="text-black">to</span> Help
               </div>
             </h1>
-            <p className="max-w-lg text-black font-poppins">
+            <p className="max-w-lg font-poppins text-black">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec vel
               erat nibh. Sed rutrum turpis quis lacinia sollicitudin. Sed ac
               neque cursus, ornare augue.
             </p>
 
-            <div className="grid grid-cols-2 space-y-4 ">
+            <div className="grid grid-cols-2 space-y-4">
               <div className="flex items-center">
                 <FaPhoneAlt className="mr-4 h-8 w-8 text-red-500" />
                 <div className="flex flex-col items-start">
@@ -84,15 +84,15 @@ export default function MapComponent() {
             <div className="ml-auto h-14 w-44 bg-primary"></div>
 
             {/* Map Container */}
-            <div className="relative ml-auto h-[500px] w-[600px] rounded-lg bg-white shadow-lg">
-              <Image
-                src="/mapImg.png"
-                alt="Location Map"
-                layout="fill"
-                objectFit="cover"
-                className="rounded-lg"
-              />
-            </div>
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d14601.011562448562!2d90.37457867724605!3d23.809604734220887!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3755c1ff760ef011%3A0xf3b7755c57692453!2sFire%20%26%20Safety%20Management!5e0!3m2!1sen!2sus!4v1727801670326!5m2!1sen!2sus"
+              width="600"
+              height="450"
+              style={{ border: 0 }}
+              allowFullScreen
+              loading="lazy"
+              referrerPolicy="no-referrer-when-downgrade"
+            ></iframe>
 
             <div className="ml-auto h-14 w-44 bg-primary"></div>
           </div>
