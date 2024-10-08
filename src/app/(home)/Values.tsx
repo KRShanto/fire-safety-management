@@ -124,7 +124,7 @@ export default function Values() {
   };
 
   return (
-    <motion.div className="relative flex h-[60rem] w-full flex-col items-center bg-[#F9F6EE]">
+    <motion.div className="relative flex h-[60rem] w-full flex-col items-center overflow-hidden bg-[#F9F6EE]">
       <Image
         src="/Values-bg.png"
         alt="Background"
