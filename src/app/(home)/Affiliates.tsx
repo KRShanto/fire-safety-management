@@ -5,7 +5,6 @@ import { Montserrat } from "next/font/google";
 import Image from "next/image";
 import React from "react";
 import Slider from "react-infinite-logo-slider";
-import "./Affiliates.css";
 
 export default function Affiliates() {
   return (
