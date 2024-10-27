@@ -1,3 +1,4 @@
+/* eslint-disable @next/next/no-img-element */
 "use client";
 import { motion } from "framer-motion";
 import { Montserrat } from "next/font/google";
@@ -28,6 +29,7 @@ export default function Affiliates() {
           pauseOnHover={true}
           blurBorders={true}
           blurBorderColor={"#fff"}
+          // @ts-ignore
           className="w-full"
         >
           {[1, 2, 1, 2].map((n, idx) => (
