@@ -33,20 +33,19 @@ const activities = [
 export default function OurCoreActivity() {
   return (
     <div
-      className="relative h-[790px]"
+      className="relative h-[790px] w-full"
       style={{
         background: "url(/activity-bg-image.png)",
-        
       }}
     >
       <div className="overlay bg-[#ED1C24] opacity-95" />
-      <div className="trapezoid absolute left-[41%] 2xl:left-[29%] top-0 z-30 mx-auto flex h-[104px] w-[70rem] -translate-x-[50%] items-center justify-center gap-8 bg-[#F9F6EE]">
+      <div className="trapezoid absolute left-[50%] top-0 z-30 mx-auto flex h-[104px] w-[70rem] -translate-x-[50%] items-center justify-center gap-8 bg-[#F9F6EE] 2xl:left-[50%]">
         <h1 className="mr-5 text-center text-[40px] font-bold">
           Our <span className="font-poppins text-[#ED1C24]">CORE ACTIVITY</span>
         </h1>
       </div>
       {/* activity card section */}
-      <div className="absolute left-[49%] z-30 mx-auto flex h-full w-full max-w-[1200px] -translate-x-[50%] -translate-y-[15%] items-center justify-center">
+      <div className="absolute left-[47%] z-30 mx-auto flex h-full w-full max-w-[1200px] -translate-x-[50%] items-center justify-center">
         <div className="grid w-full grid-cols-4 gap-x-3">
           {activities.map((activity) => {
             return (
