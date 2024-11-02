@@ -1,12 +1,9 @@
 "use client";
 
-import { Alumni_Sans, Montserrat } from "next/font/google";
 import Image from "next/image";
-import { BsBoxSeam } from "react-icons/bs";
-import { LuNewspaper } from "react-icons/lu";
-import { IoSettings } from "react-icons/io5";
-import { MdEmail, MdOutlinePhoto } from "react-icons/md";
 import Link from "next/link";
+import { usePathname } from "next/navigation";
+import { BsBoxSeam } from "react-icons/bs";
 import {
   FaFacebook,
   FaInstagram,
@@ -14,8 +11,9 @@ import {
   FaPhone,
   FaYoutube,
 } from "react-icons/fa";
-import { usePathname } from "next/navigation";
-import { cn } from "@/lib/cn";
+import { IoSettings } from "react-icons/io5";
+import { LuNewspaper } from "react-icons/lu";
+import { MdEmail, MdOutlinePhoto } from "react-icons/md";
 
 const insights = [
   { src: "/Insight1.png", title: "Product", icon: <BsBoxSeam /> },

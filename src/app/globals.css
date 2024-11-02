@@ -7,6 +7,7 @@
   --foreground: #171717;
   --p: 50px;
   --border-color: #ed1c24;
+  --font-poppins: 'Poppins',sans-serif;
 }
 
 @media (prefers-color-scheme: dark) {
