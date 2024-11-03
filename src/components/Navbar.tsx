@@ -1,10 +1,11 @@
 import React from "react";
 import Link from "next/link";
 import Image from "next/image";
+import { MdArrowDropDown } from "react-icons/md";
 
 export default function Navbar() {
   return (
-    <div className="sticky top-0 z-50 h-[100px] w-full overflow-hidden">
+    <div className="sticky top-0 z-50 h-[100px] w-full">
       <div className="relative mx-auto h-full max-w-[72rem]">
         <svg
           className="absolute left-0 top-0 h-full w-full"
@@ -53,7 +54,20 @@ export default function Navbar() {
               className="max-h-[100px]"
             />
           </Link>
-          <Link href="/library">Library</Link>
+          <div className="group relative">
+            <button className="flex items-center space-x-1">
+              <span>Library</span>
+              <MdArrowDropDown size={20} />
+            </button>
+            <div className="absolute z-50 hidden rounded-sm bg-[#F9F6EE] shadow-lg group-hover:block">
+              <Link className="dropdown-item" href="/gallery">
+                Gallery
+              </Link>
+              <Link className="dropdown-item" href="/achievements">
+                Achievements
+              </Link>
+            </div>
+          </div>
           <Link href="/career">Career</Link>
           <Link href="/contact">Contact us</Link>
         </div>
