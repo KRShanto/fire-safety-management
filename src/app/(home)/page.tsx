@@ -1,4 +1,3 @@
-import HeroVideo from "@/components/HeroVideo";
 import About from "./About";
 import Affiliates from "./Affiliates";
 import Certificates from "./Certificates";
