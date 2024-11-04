@@ -1,3 +1,4 @@
+/* eslint-disable @next/next/no-img-element */
 import Image from "next/image";
 import React from "react";
 
@@ -13,12 +14,12 @@ export default function Experience() {
         }}
       >
         <div className="-ml-[60px] -mt-[80px] flex h-[152px] w-[210px] items-center justify-center bg-[#ed1c24] p-4">
-          <h3 className="text-center font-poppins text-3xl font-semibold text-white">
+          <h3 className="object-cover text-center font-poppins text-3xl font-semibold text-white">
             20 YEARS EXPERIENCE
           </h3>
         </div>
-        <Image
-          className="absolute -right-[50px] bottom-0 h-[225px] w-[300px] ring-8 ring-white"
+        <img
+          className="absolute -right-[50px] bottom-0 h-[225px] w-[300px] object-cover ring-8 ring-white"
           src="/about-person-2.jfif"
           alt="Experience banner"
           width={500}

@@ -1,4 +1,7 @@
+/* eslint-disable @next/next/no-img-element */
+"use client";
 import Image from "next/image";
+import Slider from "react-infinite-logo-slider";
 
 const businessLogos = [
   {
@@ -44,29 +47,43 @@ const businessLogos = [
 ];
 export default function BusinessLinks() {
   return (
-    <div className="mt-20 bg-white">
-      <div className="mx-auto flex max-w-7xl items-center justify-center space-x-3 py-4">
-        <h1 className="mr-5 text-[40px] font-bold">
-          Our <span className="text-[#ED1C24]">Business Links</span>
-        </h1>
+    <div className="#md:pl-[10%] #2xl:pl-[18%] #bg-[#F9F6EE] #px-20 my-20 bg-white py-16">
+      <div className="mx-auto flex max-w-[1200px] items-center gap-10">
+        <h2 className="w-[40%] font-montserrat text-4xl">
+          Our{" "}
+          <span className="font-bold text-primary text-red-500">
+            Business Links
+          </span>
+        </h2>
+
         <div
-          className="h-[159px] w-[1px]"
+          className="h-[110px] w-[2px]"
           style={{
-            backgroundImage:
-              "linear-gradient(to bottom, rgba(0,0,0,0),  red, rgba(0,0,0,0))",
+            background:
+              "linear-gradient(to bottom, rgba(237, 28, 36, 0) 0%, #ED1C24 50%, rgba(237, 28, 36, 0) 100%)",
           }}
-        />
-        <div className="flex items-center space-x-4">
-          {businessLogos.map((logoInfo) => (
-            <Image
-              className="h-[60px] w-[60px]"
-              key={logoInfo.id}
-              src={logoInfo.src}
-              alt={logoInfo.alt}
-              width={500}
-              height={500}
-            />
-          ))}
+        ></div>
+
+        <div className="w-[60%]">
+          <Slider
+            width="200px"
+            duration={40}
+            pauseOnHover={true}
+            blurBorders={true}
+            blurBorderColor={"#F9F6EE"}
+            // @ts-ignore
+            className="w-full space-x-8"
+          >
+            {[...businessLogos, ...businessLogos].map((n, idx) => (
+              <Slider.Slide key={idx}>
+                <img
+                  src={n.src}
+                  alt={n.alt}
+                  className="ticker-img mr-8 aspect-square h-[80px] w-[80px]"
+                />
+              </Slider.Slide>
+            ))}
+          </Slider>
         </div>
       </div>
     </div>
