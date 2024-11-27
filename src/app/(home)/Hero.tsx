@@ -2,7 +2,7 @@ import { Montserrat } from "next/font/google";
 
 export default function Hero() {
   return (
-    <div className="flex h-[77vh] flex-col justify-between md:h-[74] xl:h-[76vh] 2xl:h-[80vh]">
+    <div className="xl2:h-[80vh] xl3:h-[78vh] flex h-[77vh] flex-col justify-between md:h-[74] xl:h-[77vh] 2xl:h-[80vh] xl4:h-[80.5vh]">
       <div
         className="flex max-h-[40%] justify-center gap-3 opacity-50"
         style={{ position: "relative", zIndex: 2 }}
@@ -16,10 +16,10 @@ export default function Hero() {
         className="flex flex-grow flex-col items-center justify-center font-montserrat font-semibold uppercase text-white"
         style={{ position: "relative", zIndex: 2 }}
       >
-        <h2 className="relative text-[20px] md:text-[24px] md:top-2 2xl:text-[28px]">
+        <h2 className="relative text-[20px] md:top-2 md:text-[24px] 2xl:text-[28px]">
           Welcome to
         </h2>
-        <h1 className="flex flex-col text-center font-extrabold leading-tight md:leading-[4rem] md:mt-2  2xl:leading-[5rem]">
+        <h1 className="flex flex-col text-center font-extrabold leading-tight md:mt-2 md:leading-[4rem] 2xl:leading-[5rem]">
           <span className="text-[48px] md:text-[64px] 2xl:text-[80px]">
             Fire & Safety
           </span>
@@ -36,7 +36,7 @@ export default function Hero() {
           <button className="rounded-md bg-primary px-5 py-2 md:px-7 md:py-3 2xl:py-3">
             Learn More
           </button>
-          <button className=" rounded-md border-2 px-5 py-2 md:px-7 md:py-3 2xl:py-3">
+          <button className="rounded-md border-2 px-5 py-2 md:px-7 md:py-3 2xl:py-3">
             Contact Us
           </button>
         </div>
