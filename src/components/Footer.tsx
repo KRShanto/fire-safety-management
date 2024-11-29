@@ -92,26 +92,25 @@ export default function Footer() {
         // Add some padding if the page is home
         <div className="p-20"></div>
       )}
-      <div className="relative mb-0 flex justify-center gap-5 bottom-120 z-10 top-20">
-          {Array.from({ length: 4 }).map((_, i) => (
-            <div key={i} className="h-20 w-20 rounded-full bg-primary p-3 ">
-              <Image
-                alt="Footer icon"
-                src={`/Footer-icon-${i + 1}.svg`}
-                width={55}
-                height={55}
-              />
-            </div>
-          ))}
-        </div>
+      <div className="bottom-120 relative top-20 z-10 mb-0 flex justify-center gap-5">
+        {Array.from({ length: 4 }).map((_, i) => (
+          <div key={i} className="h-20 w-20 rounded-full bg-primary p-3">
+            <Image
+              alt="Footer icon"
+              src={`/Footer-icon-${i + 1}.svg`}
+              width={55}
+              height={55}
+            />
+          </div>
+        ))}
+      </div>
 
       {/* Actual footer */}
       <footer
-        className="relative footer-trapezoid text-white"
+        className="footer-trapezoid relative text-white"
         style={{ backgroundImage: 'url("/blueFooterbg.png")' }}
       >
         <div className="z-1 absolute inset-0 bg-blue-800 opacity-50" />
-        
 
         <div className="m-8 mt-24 flex justify-between gap-6 text-sm lg:gap-4 xl:gap-8 2xl:gap-6">
           <div className="z-10 flex flex-col gap-1 text-white">
@@ -168,9 +167,12 @@ export default function Footer() {
         </div>
 
         <div className="mt-10 flex flex-col p-5 px-40 text-xl text-white lg:flex-row lg:justify-between">
-          <p className="z-10 ">© All Rights Reserved By FSM 2024</p>
+          <p className="z-10">© All Rights Reserved By FSM 2024</p>
           <p className="z-10">
-            Developed By <b>Levant IT Solution</b>
+            Developed By{" "}
+            <a href="https://levantitsolution.com/" target="_blank">
+              <b>Levant IT Solution</b>
+            </a>
           </p>
         </div>
       </footer>
