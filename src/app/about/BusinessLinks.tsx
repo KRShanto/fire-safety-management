@@ -70,7 +70,7 @@ export default function BusinessLinks() {
             duration={40}
             pauseOnHover={true}
             blurBorders={true}
-            blurBorderColor={"#F9F6EE"}
+            blurBorderColor={"#fff"}
             // @ts-ignore
             className="w-full space-x-8"
           >
