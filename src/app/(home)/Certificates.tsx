@@ -12,7 +12,7 @@ import { Autoplay, Navigation, Pagination } from "swiper/modules";
 const certificates = [
   {
     src: "/Certificate1.png",
-    title: "We are ##RFSC CERTIFIED##",
+    title: "We are ##RJSC CERTIFIED##",
     description:
       "At Fire and Safety Management, we pride ourselves on meeting the highest standards tof compliance and professionalism. Our RJSC certification is a testament to our commitment to legal and operational excellence in Bangladesh. This certification confirms our adherence to stringent regulations and our capability to provide reliable safety and fire management solutions. It not only enhances our credibility but also ensures that we are equipped to offer top-tier service, training, and consultancy in safety management.",
   },

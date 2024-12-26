@@ -28,7 +28,7 @@ export default function Affiliates() {
             // @ts-ignore
             className="w-full space-x-8"
           >
-            {[1, 2, 1, 2].map((n, idx) => (
+            {[1, 1].map((n, idx) => (
               <Slider.Slide key={idx}>
                 <img
                   src={`/Affiliate${n}.png`}
